@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Food Verify</title>
+	<link rel="stylesheet" type="text/css" href="Style.css">
+  </head>
+  	<body>
+  		<h1> &#127829 &#127831 &#127789 FOOD SOURCE VERIFICATION WEB BASED APP &#127789 &#127831 &#127829</h1>
+  			<div class="input_column">
+  				<h2>Input Data Here</h2>
+  					<p> Enter your data and press submit. When you press submit your data will be sent to the blockchain</p>
+  						<form class="input">
+  							<label for="what">WHAT:</label>
+  								<input type="text" id="what" name="what">
+  									<br>
+		  					<label for="when">WHEN:</label>
+		  						<input type="text" id="when" name="what">
+		  							<br>
+							<label for="where">WHERE:</label>
+								<input type="text" id="where" name="where">
+									<br>
+							<label for="quantity">QUANTITY:</label>
+								<input type="text" id="quantity" name="quantity">
+									<br><br>
+							<button type="submit">Submit Data to Blockchain</button>
+						</form> <br><br>
+
+				<h3> Transaction Receipt Data (see full receipt in console) </h3>
+				<h4 id="tx_hash">&nbsp;</h4>
+				<h4 id="blk_hash">&nbsp;</h4>
+				<h4 id="gas_used">&nbsp;</h4>
+
+  			</div>
+  	
+	  		<div class="output_column">
+	  			<h2>Output Data Here</h2>
+	  				<p> Input index & press submit to display index object </p>
+	  					<form class="get_data">
+	  						<label for="index">Enter object index Here</label>
+	  							<input type="text" id="index" name="index">
+	  								<button type="submit">Retrieve Button from Blockchain</button>
+	  					</form><br><br><br><br>
+
+	  				<h3> Object Data Displayed Below </h3>
+	  				<h4 id="output_where">&nbsp;</h4>
+	  				<h4 id="output_what">&nbsp;</h4>
+	  				<h4 id="output_quantity">&nbsp;</h4>
+	  				<h4 id="output_when">&nbsp;</h4>
+
+	  		</div>
+
+  		<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.34/dist/web3.min.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  		<script src="script.js"></script>
+  </body>
+</html>

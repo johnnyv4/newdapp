@@ -1,0 +1,22 @@
+.input_column{
+	float: left;
+	width: 50%;
+	height: 500px;
+	background-color: Azure;
+}
+
+.output_column{
+	float: right;
+	width: 50%;
+	height: 500px;
+	background-color: Beige;
+}
+
+h1{
+text-align: center;
+padding: 70px 0;
+background-color: LightGrey;
+
+}
+
+
